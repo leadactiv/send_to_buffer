@@ -25,6 +25,10 @@ export const Params = () => {
                         <input type="text" className="form-control" name="amo_tag" onChange={inputChange} placeholder="amo_tag" value={sendPhonesContext.params.amo_tag} />
                 </div>
                 <div className="form-group" style={{width: "100%"}}>
+                        <h4>Amo Status ID</h4>
+                        <input type="text" className="form-control" name="status_id" onChange={inputChange} placeholder="status_id" value={sendPhonesContext.params.status_id} />
+                </div>
+                <div className="form-group" style={{width: "100%"}}>
                         <h4>utm-medium</h4>
                         <input type="text" className="form-control" name="utm_medium" onChange={inputChange} placeholder="utm_medium" value={sendPhonesContext.params.utm_medium} />
                 </div>
@@ -32,10 +36,10 @@ export const Params = () => {
                         <h4>utm-source</h4>
                         <input type="text" className="form-control" name="utm_source" onChange={inputChange} placeholder="utm_source" value={sendPhonesContext.params.utm_source} />
                 </div>
-                <div className="form-group" style={{width: "100%"}}>
+                {/*<div className="form-group" style={{width: "100%"}}>
                         <h4>utm-content</h4>
                         <input type="text" className="form-control" name="utm_content" onChange={inputChange} placeholder="utm_content" value={sendPhonesContext.params.utm_content} />
-                </div>
+                </div>*/}
                 <div className="form-group" style={{width: "100%"}}>
                         <h4>utm-term</h4>
                         <input type="text" className="form-control" name="utm_term" onChange={inputChange} placeholder="utm_term" value={sendPhonesContext.params.utm_term} />

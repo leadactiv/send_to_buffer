@@ -10,21 +10,23 @@ if (count($phonesList) > 0 && $data->phones != "") {
   //var_dump($phonesList);
   foreach ($phonesList as $phone) {
     if ($phone != "") {
-      $fields = "phone=" . $phone . "&s_name=" . $data->s_name . "&utm_send=cc&s_id=" . $data->s_id;
+      $fields = "phone=" . $phone . "&s_name=" . $data->s_name . "&utm_send=cc&s_id=" . $data->s_id . "&utm_content=1ekran";
       if (isset($data->utm_medium)) {
         $fields .= "&utm_medium=" . $data->utm_medium;
       }
       if (isset($data->amo_tag)) {
         $fields .= "&amo_tag=" . $data->amo_tag;
       }
-
+      if (isset($data->status_id)) {
+        $fields .= "&status_id=" . $data->status_id;
+      }
       if (isset($data->utm_source)) {
         $fields .= "&utm_source=" . $data->utm_source;
       }
 
-      if (isset($data->utm_content)) {
+      /*if (isset($data->utm_content)) {
         $fields .= "&utm_content=" . $data->utm_content;
-      }
+      }*/
 
       if (isset($data->utm_term)) {
         $fields .= "&utm_term=" . $data->utm_term;

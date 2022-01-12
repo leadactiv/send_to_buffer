@@ -7,10 +7,12 @@ import { useSendPhones } from './hooks/send.phones.hook';
 
 function App() {
   const {phonesList, setPhonesList, params, setParams} = useSendPhones()
+  console.log()
   return (
+    window.location.href.indexOf('key=dmDbcQH92j&')!==-1?
     <SendPhonesContext.Provider value={{phonesList, setPhonesList, params, setParams}}>
       <ToolBar />
-    </SendPhonesContext.Provider>
+    </SendPhonesContext.Provider>:<div>Go away</div>
   );
 }
 
