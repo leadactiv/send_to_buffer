@@ -14,6 +14,9 @@ if (count($phonesList) > 0 && $data->phones != "") {
       if (isset($data->utm_medium)) {
         $fields .= "&utm_medium=" . $data->utm_medium;
       }
+      if (isset($data->amo_tag)) {
+        $fields .= "&amo_tag=" . $data->amo_tag;
+      }
 
       if (isset($data->utm_source)) {
         $fields .= "&utm_source=" . $data->utm_source;

@@ -21,6 +21,10 @@ export const Params = () => {
                         <input type="text" className="form-control" name="s_id" onChange={inputChange} placeholder="s_id" value={sendPhonesContext.params.s_id} />
                 </div>
                 <div className="form-group" style={{width: "100%"}}>
+                        <h4>Тег</h4>
+                        <input type="text" className="form-control" name="amo_tag" onChange={inputChange} placeholder="amo_tag" value={sendPhonesContext.params.amo_tag} />
+                </div>
+                <div className="form-group" style={{width: "100%"}}>
                         <h4>utm-medium</h4>
                         <input type="text" className="form-control" name="utm_medium" onChange={inputChange} placeholder="utm_medium" value={sendPhonesContext.params.utm_medium} />
                 </div>
